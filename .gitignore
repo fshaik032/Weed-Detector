@@ -1,3 +1,5 @@
 .DS_Store
 weed/
 images/
+model.pt
+node_modules
