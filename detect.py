@@ -6,12 +6,13 @@ from PIL import Image
 import torchvision
 import cv2
 import matplotlib.pyplot as plt
+print("starting")
 
 model=torchvision.models.detection.fasterrcnn_resnet50_fpn(num_classes=3)
 model.load_state_dict(torch.load("model.pt", map_location=torch.device('cpu')))
 model.eval()
 names = {'0': 'crop', '1': 'weed'}
-pic = plt.imread(r"./images/agri_data/data/agri_0_991.jpeg")
+pic = plt.imread(r"./ok.jpeg")
 img = cv2.cvtColor(pic, cv2.COLOR_BGR2RGB)
 
 vector = torch.from_numpy(img/255.).permute(2,0,1).float()
@@ -30,4 +31,5 @@ for idx in range(square.shape[0]):
             fontScale=0.5, thickness=1, lineType=cv2.LINE_AA, color=(0, 0, 255))
 
 im = Image.fromarray(pic)
-im.save("ok.jpeg")
+print("we have finished")
+im.save("tada.jpeg")

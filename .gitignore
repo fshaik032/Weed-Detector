@@ -3,3 +3,4 @@ weed/
 images/
 model.pt
 node_modules
+test/
