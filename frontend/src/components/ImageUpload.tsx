@@ -68,7 +68,7 @@ function ImageUpload() {
 
                           
             <hr />
-            <button> Submit and check the console</button>
+            <button> Submit</button>
             
             </>
           }

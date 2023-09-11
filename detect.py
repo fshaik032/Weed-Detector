@@ -6,7 +6,6 @@ from PIL import Image
 import torchvision
 import cv2
 import matplotlib.pyplot as plt
-print("starting")
 
 model=torchvision.models.detection.fasterrcnn_resnet50_fpn(num_classes=3)
 model.load_state_dict(torch.load("model.pt", map_location=torch.device('cpu')))
