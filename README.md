@@ -11,3 +11,7 @@
    3. run pip install -r requirements.txt in the root directory (if you are using a virtual environment you will have to change the python path in app.js)
 
    4. run node app.js
+
+
+Demo:
+https://www.youtube.com/watch?v=4C7mTSRt5xs&feature=youtu.be
